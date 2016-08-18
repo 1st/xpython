@@ -9,7 +9,7 @@ In case if you assign any value - data type calculated automatically.
 
 ```python
 # You need to specify data type for a variable without initial value.
-int a
+Int a
 # In this case we assign string, that has type Str. New variable "b" has type Str.
 b = "Let's do this World amazing!"
 # We can define variable like this, and it has type Int, but without initial value.
