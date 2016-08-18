@@ -12,5 +12,5 @@ First of all - in xPython all data types starts from the capital letter.
 
  - **Int** - integer variable (64 bit).
  - **Float** - floating point number. *(note: check, can we use float instead of decimal,
-   or we need to provide this data type as well).
+   or we need to provide this data type as well).*
  - **Str** - unicode string.
