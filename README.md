@@ -21,7 +21,7 @@ Read full documentation about the xPython in the [docs/](docs/) folder.
 It's very basic description of the xPython syntax. You can find it very similar to Python language.
 
 ```python
-from module import something as alias_of_something
+from math import operation as do_operation
 
 class X:
   int x
@@ -31,5 +31,8 @@ class X:
     this.x = x
 
   def add(int y) -> int:
-    return this.x + y
+    return do_operation('+', this.x, y)
+  
+  def doit(int y, char op) - > int:
+    return do_operation(op, this.x, y)
 ```
