@@ -11,3 +11,25 @@ Idea is to define a syntax with static typing, but with late type binding. Synta
 **Parser** - parses our source code to a special structure, that later used by Code Generator.
 
 **Code Generator** - extension that allows to convert program to a selected programming language. Each code generator rely on it's own syntax and implementation, but uses the same parsed code.
+
+## Documentation
+
+Read full documentation about the xPython in the [docs/](docs/) folder.
+
+## Syntax
+
+It's very basic description of the xPython syntax. You can find it very similar to Python language.
+
+```python
+from module import something as alias_of_something
+
+class X:
+  int x
+  str s = "Initial value"
+
+  def init(x):
+    this.x = x
+
+  def add(int y) -> int:
+    return this.x + y
+```
