@@ -4,8 +4,6 @@ We have list of pre-defined data types, that available in each xPython program.
 If you need to define your own complex data type - visit [classes](Classes.md) page
 to find how to create your own data type.
 
-## Basics
-
 First of all - in xPython all data types starts from the capital letter.
 
 ## Basic data types
