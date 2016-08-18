@@ -10,7 +10,8 @@ First of all - in xPython all data types starts from the capital letter.
 
 ## Basic data types
 
- - **Int** - integer variable (64 bit).
- - **Float** - floating point number. *(note: check, can we use float instead of decimal,
+ - **Bool** - boolean value *(True or False)*.
+ - **Int** - integer variable *(64 bit)*.
+ - **Float** - floating point number. *(Note: check, can we use float instead of decimal,
    or we need to provide this data type as well).*
  - **Str** - unicode string.
