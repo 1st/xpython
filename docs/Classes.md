@@ -12,14 +12,13 @@ Supported multi-inheritance from multiple parent base classes.
 class ClassName:
   MESSAGES = ('Hello', 'Welcome')
   limit = 20
-  
   Str name
   Int age
 
   def construct(Str name, Int age):
     this.name = name
     this.age = age
-    
+
   def welcome(Int msg_id):
     return '{greeting} {name}! You have {age} years.'.format(
       ...age=this.age,
