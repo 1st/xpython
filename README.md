@@ -24,15 +24,15 @@ It's very basic description of the xPython syntax. You can find it very similar 
 from math import operation as do_operation
 
 class X:
-  int x
-  str s = "Initial value"
+  Int x
+  Str s = "Initial value"
 
   def init(x):
     this.x = x
 
-  def add(int y) -> int:
+  def add(int y) -> Int:
     return do_operation('+', this.x, y)
   
-  def doit(int y, char op) - > int:
+  def doit(Int y, Char op) - > Int:
     return do_operation(op, this.x, y)
 ```
