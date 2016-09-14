@@ -30,9 +30,20 @@ class X:
   def init(x):
     this.x = x
 
-  def add(int y) -> Int:
+  def add(Int y) -> Int:
     return do_operation('+', this.x, y)
   
   def doit(Int y, Char op) - > Int:
     return do_operation(op, this.x, y)
+```
+
+## Installation
+
+```
+# Install it.
+pip install xpython
+# Compile file.
+xpython compile --language=python script.xpy
+# Or compile all files in folder.
+xpython compile --language=js project/
 ```
