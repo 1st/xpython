@@ -39,7 +39,7 @@ class X:
 
 ## Installation
 
-```
+```bash
 # Install it.
 pip install xpython
 # Compile file.
