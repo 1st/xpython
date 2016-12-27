@@ -9,4 +9,5 @@ In this folder you will find documentation about xPython language.
  - [Classes](Classes.md)
  - [Functions](Functions.md)
  - [Imports](Imports.md)
+ - [Iterators](Iterators.md)
  - [Statements](Statements.md)
