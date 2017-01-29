@@ -22,3 +22,14 @@ to find how to create your own data type.
  - **Null** - used to check if reference is not set.
  - **True** - boolean true.
  - **False** - boolean false.
+
+## Detailed description of each type
+
+### Str - unicode string
+
+User can inject any value in a ctring with `{variable_name}` statement.
+
+```python
+name = 'James'
+msg = 'Hello {name}!'
+```
