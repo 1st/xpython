@@ -2,6 +2,8 @@
 
 xPython provides a python-like syntax and converters to any language.
 
+It's implementation of an *"ideal language"* that has nice syntax and almost all things that we love in other programming languages.
+
 Idea is to define a syntax with static typing, but with late type binding. Syntax that very similar to **Python**, but at the same time allows to avoid some problems of the language *(like accessing private and protected properties of the class, check data types of variables, define static variables)*. At the end - we can convert the program to any other language *(Swift, Go, Python, JavaScript and Java)*, that allows to write the same codebase and use different backends to run the resulting code.
 
 ## Project building blocks
