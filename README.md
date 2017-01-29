@@ -35,7 +35,7 @@ class X:
   def add(Int y) -> Int:
     return do_operation('+', this.x, y)
   
-  def doit(Int y, Char op) - > Int:
+  def doit(Int y, Char op) -> Int:
     return do_operation(op, this.x, y)
 ```
 
