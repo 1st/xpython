@@ -3,7 +3,9 @@
 Class is a user defined [data type](DataTypes.md).
 Like any other data type in xPython - class name starts from the capital letter.
 
-Supported multi-inheritance from multiple parent base classes.
+Supported multi-inheritance from multiple parent base classes. By default it extends very base class `Type`.
+
+Private, protected and public is here. But all are public by default and this keyword is not needed.
 
 ## Example
 
@@ -15,8 +17,8 @@ class BaseGreeting:
 
 class UserGreeting extends BaseGreeting:
   MESSAGES = ('Hello', 'Welcome')
-  Str name
-  Int age
+  private Str name
+  private Int age
 
   def construct(Str name, Int age):
     this.name = name
