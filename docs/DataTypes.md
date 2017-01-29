@@ -16,3 +16,9 @@ to find how to create your own data type.
  - **Float** - floating point number. *(Note: check, can we use float instead of decimal,
    or we need to provide this data type as well).*
  - **Str** - unicode string.
+
+## Special data types
+
+ - **Null** - used to check if reference is not set.
+ - **True** - boolean true.
+ - **False** - boolean false.
