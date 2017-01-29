@@ -23,9 +23,6 @@ class UserGreeting extends BaseGreeting:
     this.age = age
 
   def get_message(Int msg_id) -> Str:
-    return '{greeting} {name}! You have {age} years.'.format(
-      age=this.age,
-      name=this.name,
-      greeting=this.MESSAGES[msg_id]
-    )
+    greeting = this.MESSAGES[msg_id]
+    return '{greeting} {this.name}! You have {this.age} years.'
 ```
