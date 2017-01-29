@@ -10,6 +10,7 @@ to find how to create your own data type.
 
 ## Basic data types
 
+ - **Type** - base type for all types. Analog of `T` in Java. Contains some logic, that is used by any data type.
  - **Bool** - boolean value *(True or False)*.
  - **Int** - integer variable *(64 bit)*.
  - **Float** - floating point number. *(Note: check, can we use float instead of decimal,
