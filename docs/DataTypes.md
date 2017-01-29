@@ -25,11 +25,12 @@ to find how to create your own data type.
 
 ## Detailed description of each type
 
-### Str - unicode string
+### `Str` - unicode string
 
-User can inject any value in a ctring with `{variable_name}` statement.
+User can inject any value to a string with `{variable_name}` syntax.
 
 ```python
 name = 'James'
 msg = 'Hello {name}!'
+print(msg)  # Hello James!
 ```
