@@ -50,3 +50,15 @@ def find_word_definition(word):
 # It you need to have a list of values - then you need to iterate for all elements and create a list of values.
 lst = List(word for word in get_word())
 ```
+
+Also generators can be used to receive data from the external resource *(async call)*.
+When we call generator that needs time to get data *(like wait for response from database or getting data by url)* - our program becomes sleep, but subprocess waits for data and wake-ups our main process when it has requested data.
+
+```python
+def get_image(url):
+  return urlopen(url).read()
+
+for url in ['img1', 'img2']:
+  img_data = get_image(url)
+  write_to_file(img_data)
+```
