@@ -9,9 +9,12 @@ Supported multi-inheritance from multiple parent base classes.
 
 ```python
 # Class name always starts from a CapitalLetter.
-class ClassName:
+class BaseGreeting:
+  def get_message() -> Str:
+    return 'Hello!'
+
+class UserGreeting extends BaseGreeting:
   MESSAGES = ('Hello', 'Welcome')
-  limit = 20
   Str name
   Int age
 
@@ -19,9 +22,10 @@ class ClassName:
     this.name = name
     this.age = age
 
-  def welcome(Int msg_id):
+  def get_message(Int msg_id) -> Str:
     return '{greeting} {name}! You have {age} years.'.format(
-      ...age=this.age,
-      ...name=this.name,
-      ...greeting=this.MESSAGES[msg_id])
+      age=this.age,
+      name=this.name,
+      greeting=this.MESSAGES[msg_id]
+    )
 ```
