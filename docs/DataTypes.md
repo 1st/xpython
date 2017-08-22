@@ -41,5 +41,5 @@ Some simplifications in code allows to write more human-frieldly code.
 
 ```python
 size = 1KB  # sets 1024. You can use MB, GB, TB as well
-sum = 1M * 20  # you can K, M as shortcuts to thousand and million
+amount = 1M + 20K  # results to 1020000. You can use K, M as shortcuts to thousand and million
 ```
