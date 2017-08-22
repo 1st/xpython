@@ -34,3 +34,12 @@ name = 'James'
 msg = 'Hello {name}!'
 print(msg)  # Hello James!
 ```
+
+### `Int` - integer number
+
+Some simplifications in code allows to write more human-frieldly code.
+
+```python
+size = 1KB  # sets 1024. You can use MB, GB, TB as well
+sum = 1M * 20  # you can K, M as shortcuts to thousand and million
+```
