@@ -11,4 +11,7 @@ Function name always starts from a lower-case letter, like a [variable](Variable
 ```python
 func func_name(age: Int, name: Str, greeting='Hello'): Str
   return "{greeting}! Your name is {name} and you have {age} years"
+
+func _localFunction()
+  print('It's a local function and can't be accessed outside.')
 ```
