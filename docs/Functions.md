@@ -9,6 +9,6 @@ Function name always starts from a lower-case letter, like a [variable](Variable
 ## Examples
 
 ```python
-func func_name(Int age, Str name) -> Str
+func func_name(age: Int, name: Str): Str
   return "Your name is {name} and you have {age} years"
 ```
