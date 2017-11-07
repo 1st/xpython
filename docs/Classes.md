@@ -15,7 +15,7 @@ class _BaseGreeting
   func get_message(): Str
     return 'Hello! It's a local class that can't be accessed outside.'
 
-class UserGreeting extends _BaseGreeting:
+class UserGreeting extends _BaseGreeting
   MESSAGES = ['Hello', 'Welcome']
   _name: Str
   _age: Int
