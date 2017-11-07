@@ -14,6 +14,12 @@ In case if you assign any value - data type calculated automatically.
 * **immutable** value can't be changed. We can reassing variable to the new value, but we can't change the data in the variable.
 * **mutable** value can be modified in-place. Defined like this: `var_name = 25` or `var_name: Int`.
 
+### Visibility
+
+Value can be set as:
+* **local variable** and used inside the scope
+* **public variable** that can be accessed outside of the scope
+
 ## Examples
 
 ```python
