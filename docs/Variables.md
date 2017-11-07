@@ -9,9 +9,10 @@ In case if you assign any value - data type calculated automatically.
 
 **(IT'S A DRAFT)**
 
-* **constant** has a value that we can't reassign, even in the next run of the same code the value will be the same as it was set originally at the first try. Constants are defined as all-upper-case letters like this `Int AGE = 30`.
-* **immutable** *(by default)* variable can't be changed. We can reassing variable to the new value, but we can't change the data in the variable.
-* **mutable** value can be modified in-place. Defined with `@` like this: `Int @var_name = 25`
+* **static** has a value that shared between multiple calls of the same code. Even in the next run of the same code the value will be the same as it was set originally at the first try. This value can be changed. See [wikipedia](https://en.wikipedia.org/wiki/Static_variable).
+* **constant** variable can't be reassigned and value can't be changed. Constant variables are defined as all-upper-case letters like this `AGE = 30` and always should have the value set. It's impossible to do this `AGE: Int` because value should be set once and forever. See [wikipedia](https://en.wikipedia.org/wiki/Constant_(computer_programming)).
+* **immutable** value can't be changed. We can reassing variable to the new value, but we can't change the data in the variable.
+* **mutable** value can be modified in-place. Defined like this: `var_name = 25` or `var_name: Int`.
 
 ## Examples
 
