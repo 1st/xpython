@@ -20,9 +20,41 @@ Value can be set as:
 * **local variable** and used inside the scope
 * **public variable** that can be accessed outside of the scope
 
+In current programming languages we have local scope (of the module, class and function), but doesn't have a local scope for the calculation blocks. As result we keep unneeded variables.
+
+```
+func name_to_domain_name(name: Str)
+  if name[0] == 'a'
+    first_3_letters = name[:3]
+    if first_3_letters == 'xxx':
+      throw Exception("We can't use this domain name.")
+    prefix = "{name}.{first_3_letters}"
+  else
+    prefix = name
+  # first_3_letters will be still defined here, but we don't need it!
+  result = "{prefix}.com"
+  return result
+```
+
+And proposition how to avoid it:
+```
+func name_to_domain_name(name: Str)
+  if name[0] == 'a'
+    prefix =
+      first_3_letters = name[:3]
+      if first_3_letters == 'xxx':
+        throw Exception("We can't use this domain name.")
+      set "{name}.{first_3_letters}"
+  else
+    prefix = name
+  # first_3_letters will NOT be defined here.
+  result = "{prefix}.com"
+  return result
+```
+
 ## Examples
 
-```python
+```
 # You need to specify data type for a variable without initial value.
 a: Int
 # In this case we assign string, that has type Str. New variable "b" has type Str.
