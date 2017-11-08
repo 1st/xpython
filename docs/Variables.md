@@ -40,11 +40,10 @@ And proposition how to avoid it:
 ```
 func name_to_domain_name(name: Str)
   if name[0] == 'a'
-    prefix =
+    prefix = "{name}.{first_3_letters}" with
       first_3_letters = name[:3]
       if first_3_letters == 'xxx':
         throw Exception("We can't use this domain name.")
-      set "{name}.{first_3_letters}"
   else
     prefix = name
   # first_3_letters will NOT be defined here.
