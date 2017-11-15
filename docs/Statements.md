@@ -5,19 +5,19 @@ Different statements in xPython.
 ## Conditions
 
 ```python
-if age < 13:
+if age < 13
   label = 'Kid'
-e;if age >= 13 and age <= 19:
+e;if age >= 13 and age <= 19
   label = 'Teenager'
-else:
+else
   label = 'Old person'
 ```
 
 ## Loops
 
 ```python
-for year in years:
+for year in years
   # Do something.
-empty:
+empty
   # List of years is ampty.
 ```
