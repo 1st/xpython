@@ -8,10 +8,32 @@ Function name always starts from a lower-case letter, like a [variable](Variable
 
 ## Examples
 
-```python
-func func_name(age: Int, name: Str, greeting='Hello'): Str
-  return "{greeting}! Your name is {name} and you have {age} years"
+Function definition.
+
+```
+func welcome(name: Str, age: Int, greeting='Hello', ending='sir'): Str
+  return "{greeting}, {name}. You are {age} years old, correct {ending}?"
 
 func _localFunction()
-  print("It's a local function and can't be accessed outside.")
+  print("It's a local function and can't be accessed outside of the current scope (module/class/function).")
+```
+
+Usage of a function.
+
+```
+welcome('James', 25)
+welcome('James', 25, 'Hi')
+welcome('James', 25, ending: 'man')
+# This format allows to simplify readability of the multiple parameters. It's a preferred way to call a function with many parameters.
+welcome
+  name: 'James'
+  age: 25
+  greeting: 'Hi'
+# We can pass dynamically changed parameter names.
+# It allows to highlight the variable alongside other parameter names.
+paramName = 'greeting'
+welcome
+  name: 'James'
+  age: 25
+  $paramName: 'Hi'
 ```
