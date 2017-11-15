@@ -23,20 +23,20 @@ Read full documentation about the xPython in the [docs/](docs/) folder.
 It's very basic description of the xPython syntax. You can find it very similar to Python language.
 
 ```python
-from math import operation as do_operation
+import math.operations as math_operations
 
-class X:
-  Int x
-  Str s = "Initial value"
+class X
+  x: Int
+  s = "Initial value"
 
-  def init(x):
+  def init(x: Int)
     this.x = x
 
-  def add(Int y) -> Int:
-    return do_operation('+', this.x, y)
+  def add(y: Int): Int
+    return math_operations.do_operation('+', this.x, y)
   
-  def doit(Int y, Char op) -> Int:
-    return do_operation(op, this.x, y)
+  def doit(y: Int, op: Char): Int
+    return math_operations.do_operation(op, this.x, y)
 ```
 
 ## Installation
