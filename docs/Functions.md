@@ -10,7 +10,7 @@ Function name always starts from a lower-case letter, like a [variable](Variable
 
 Function definition.
 
-```
+```python
 func welcome(name: Str, age: Int, greeting='Hello', ending='sir'): Str
   return "{greeting}, {name}. You are {age} years old, correct {ending}?"
 
@@ -20,7 +20,7 @@ func _localFunction()
 
 Usage of a function.
 
-```
+```python
 welcome('James', 25)
 welcome('James', 25, 'Hi')
 welcome('James', 25, ending: 'man')
