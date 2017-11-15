@@ -8,33 +8,36 @@ functions, classes, constants or variables.
 ## Example
 
 ```python
-from django.db import
-  ...models
-  ...models.fields as fields
-  ...migrations
+import django.db
+  models
+  models.fields as fields
+  migrations
 # Import from a global scope.
-from math import factorial
+import math.factorial
 # Import from the file/package that located in the same package as this file.
-from .math import factorial as my_factorial
+import math.factorial as my_factorial
 ```
 
 **Note** that you can't do dynamical import of subpackages or files in the imported package:
 
 ```python
-from django import db
+import django.db
 
 # You can't import dynamically internal packages or files inside package.
 # You have access only to content, that you explicitly imported.
-class MyModel(db.models.Model):  ...
+class MyModel extends db.models.Model
+  ...
 
 # The right way is to import what do you need (two ways are possible).
 # Way #1 - import full package or file.
-from django.db import models
+import django.db.models
 
-class MyModel(models.Model):  ...
+class MyModel extends models.Model
+  ...
 
 # Way #2 - import only requested class.
-from django.db.models import Model
+import django.db.models as django_models
 
-class MyModel(Model):  ...
+class MyModel extends django_models.Model
+  ...
 ```
