@@ -26,7 +26,7 @@ In current programming languages we have local scope (of the module, class and f
 func name_to_domain_name(name: Str)
   if name[0] == 'a'
     first_3_letters = name[:3]
-    if first_3_letters == 'xxx':
+    if first_3_letters == 'xxx'
       throw Exception("We can't use this domain name.")
     prefix = "{name}.{first_3_letters}"
   else
