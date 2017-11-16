@@ -22,7 +22,7 @@ Value can be set as:
 
 In current programming languages we have local scope (of the module, class and function), but doesn't have a local scope for the calculation blocks. As result we keep unneeded variables.
 
-```
+```python
 func name_to_domain_name(name: Str)
   if name[0] == 'a'
     first_3_letters = name[:3]
@@ -37,7 +37,7 @@ func name_to_domain_name(name: Str)
 ```
 
 And proposition how to avoid it:
-```
+```python
 func name_to_domain_name(name: Str)
   if name[0] == 'a'
     prefix = "{name}.{first_3_letters}" with
@@ -53,7 +53,7 @@ func name_to_domain_name(name: Str)
 
 ## Examples
 
-```
+```python
 # You need to specify data type for a variable without initial value.
 a: Int
 # In this case we assign string, that has type Str. New variable "b" has type Str.
