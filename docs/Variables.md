@@ -42,7 +42,7 @@ func name_to_domain_name(name: Str)
   if name[0] == 'a'
     prefix = "{name}.{first_3_letters}" with
       first_3_letters = name[:3]
-      if first_3_letters == 'xxx':
+      if first_3_letters == 'xxx'
         throw Exception("We can't use this domain name.")
   else
     prefix = name
