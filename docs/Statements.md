@@ -10,7 +10,7 @@ if age < 13
 elif age >= 13 and age <= 19
   label = 'Teenager'
 else
-  label = 'Old person'
+  label = 'Adult'
 ```
 
 ## Loops
