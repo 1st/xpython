@@ -20,36 +20,30 @@ Value can be set as:
 * **local variable** and used inside the scope
 * **public variable** that can be accessed outside of the scope
 
-In current programming languages we have local scope (of the module, class and function), but doesn't have a local scope for the calculation blocks. As result we keep unneeded variables.
+The visibiility rules are next:
+* variables/functions/classes those defined in module/class/function are visible only in this scope
+* to make variable/function visible outside of the class - we need to use `public` keyword
+* to make variable/function/class visible outside of the module - we need to use `public` keyword.
+
+#### Example: using public and local variables and functions in a module
 
 ```python
-func name_to_domain_name(name: Str)
+public func name_to_domain_name(name: Str): Str
+  prefix = get_prefix()
+  return "{prefix}.com"
+
+func get_prefix(name: Str): Str
+  prefix = name
   if name[0] == 'a'
+    # We define a variable in the local scope with the 'var' keyword.
     first_3_letters = name[:3]
     if first_3_letters == 'xxx'
       throw Exception("We can't use this domain name.")
     prefix = "{name}.{first_3_letters}"
-  else
-    prefix = name
-  # first_3_letters will be still defined here, but we don't need it!
-  result = "{prefix}.com"
-  return result
+  # first_3_letters will not be visible here.
+  return prefix
 ```
 
-And proposition how to avoid it:
-```python
-func name_to_domain_name(name: Str)
-  if name[0] == 'a'
-    prefix = "{name}.{first_3_letters}" with
-      first_3_letters = name[:3]
-      if first_3_letters == 'xxx'
-        throw Exception("We can't use this domain name.")
-  else
-    prefix = name
-  # first_3_letters will NOT be defined here.
-  result = "{prefix}.com"
-  return result
-```
 
 ## Examples
 
