@@ -26,22 +26,22 @@ It's very basic description of the xPython syntax. You can find it very similar 
 import math.operations as math_operations
 
 class Math
-  x: Int?
-  s = "Initial value"
+  val: Int?
+  default_op = '+'
 
-  def init(x: Int)
-    this.x = x
+  def init(val: Int)
+    this.val = val
 
   def add(inc: Int): Int
-    return math_operations.do_operation('+', this.x, inc)
+    return math_operations.do_operation('+', this.val, inc)
   
   def calc(inc: Int, op: Char): Int
-    return math_operations.do_operation(op, this.x, y)
+    return math_operations.do_operation(op, this.val, y)
 
 # All parameters are passed with specifying their names
-math = Math(x = 10)
+math = Math(val = 10)
 math.add(inc = 20)
-print math.x  # prints: 30
+print math.val  # prints: 30
 math.calc(inc = 2, op = '*')
 ```
 
