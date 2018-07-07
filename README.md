@@ -26,8 +26,8 @@ It's very basic description of the xPython syntax. You can find it very similar 
 import math.operations as math_operations
 
 class Math
-  val: Int?
-  default_op = '+'
+  val = 0
+  default_op: Char?  # Optional one-character value
 
   def init(val: Int)
     this.val = val
