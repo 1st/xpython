@@ -47,11 +47,13 @@ math.calc(inc = 2, op = '*')
 
 ## Installation
 
+This still in pre-alpha stage.
+
 ```bash
-# Install it.
+# Install it
 pip install xpython
-# Compile file.
+# Compile a file
 xpython compile --language=python script.xpy
-# Or compile all files in folder.
+# Or compile all files in the given folder
 xpython compile --language=js project/
 ```
