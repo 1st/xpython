@@ -27,21 +27,21 @@ import math.operations as math_operations
 
 class Math
   val = 0
-  default_op: Char?  # Optional one-character value
+  default_op is Char or None  # Optional one-character value
 
-  def init(val: Int)
+  def init(val is Int)
     this.val = val
 
-  def add(inc: Int): Int
+  def add(inc is Int) -> Int
     return math_operations.do_operation('+', this.val, inc)
   
-  def calc(inc: Int, op: Char): Int
+  def calc(inc is Int, op is Char) -> Int
     return math_operations.do_operation(op, this.val, y)
 
 # All parameters are passed with specifying their names
 math = Math(val = 10)
 math.add(inc = 20)
-print math.val  # prints: 30
+print(out = math.val)  # prints: 30
 math.calc(inc = 2, op = '*')
 ```
 
