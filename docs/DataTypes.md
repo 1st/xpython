@@ -42,6 +42,6 @@ Some simplifications in code allows to write more human-frieldly code.
 ```python
 size = 1KB  # sets 1024. You can use MB, GB, TB as well
 amount = 1M + 20K  # results to 1020000. You can use K, M, B as shortcuts to thousand and million
-how_long = 24h * 60min * 60sec  # or 60s/60m, just to mak code more easy to understand (minutes, hours, days - which time is used?)
+how_long = 24h * 60min * 60sec  # or 60s/60m, just to make code more easy to understand (minutes, hours, days - which time is used?)
 
 ```
